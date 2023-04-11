@@ -1,0 +1,12 @@
+---
+version: '3.5'
+
+services:
+  host1:
+    image: geerlingguy/docker-centos7-ansible
+    hostname: host1.test.com
+    container_name: host1.test.com
+  host2:
+    image: geerlingguy/docker-centos7-ansible
+    hostname: host2.test.com
+    container_name: host2.test.com
