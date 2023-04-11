@@ -11,4 +11,4 @@
       debug:
         var: response.stdout
 
-- import_playbook: playbook_west.yml
+- import_playbook: playbook_west.yaml

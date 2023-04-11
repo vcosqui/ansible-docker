@@ -5,11 +5,11 @@
   become: true
 
   vars:
-    awesome_string: "{{ vault_awesome_string }}"
+    secret_var: "{{ secret }}"
 
   tasks:
     - name: Run a cool shell command
-      ansible.builtin.shell: echo "my name is {{ inventory_hostname }} in the {{ group_names }} group(s). {{ awesome_string }}!"
+      ansible.builtin.shell: echo "my name is {{ inventory_hostname }} in the {{ group_names }} group(s). {{ secret_var }}!"
       register: response
 
     - name: Output a variable from the previous task
